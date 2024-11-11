@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Co-Viewer</title>
+    <style>
+        #pdfViewer {
+            border: 1px solid #ddd;
+            width: 80%;
+            height: 600px;
+            margin: auto;
+            overflow: auto;
+        }
+        #controls {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="pdfViewer"></div>
+    <div id="controls">
+        <button id="prevPage">Previous</button>
+        <span id="pageNum">Page: <span id="currentPage">1</span></span>
+        <button id="nextPage">Next</button>
+    </div>
+
+    <!-- Include PDF.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
